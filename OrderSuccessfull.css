@@ -1,0 +1,24 @@
+ /*   
+                      Nagendra, Sathyasagar
+                      Account:  jadrn024
+                      CS645, Spring 2018
+                      Project #2
+              */
+
+
+#success-message{
+font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+#main-div{
+padding: 200px;
+}
+
+#image-div{
+padding: 100px;
+}

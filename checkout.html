@@ -1,0 +1,183 @@
+<!DOCTYPE HTML><html lang="en">
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="/jadrn024/checkout.js"></script>
+<link rel="stylesheet" href="/jadrn024/checkout.css" />
+
+    <!--  
+                      Nagendra, Sathyasagar
+                      Account:  jadrn024
+                      CS645, Spring 2018
+                      Project #2
+              -->
+
+    <meta charset="UTF-8">
+    <title>The Headpone Shack</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <i class="fas fa-headphones fa-5x pr-3"></i>
+    <a class="navbar-brand" href="/jadrn024/proj2.html">The Headphone Shack</a>
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+    <div style="font-size:3em; color:White">
+        <a href="http://jadran.sdsu.edu/jadrn024/cart.html" ><i class="fas fa-shopping-basket"></i></a>
+    </div>
+</nav>
+
+<div class="container">
+
+
+    <form class="border rounded p-3 m-3">
+        <h3> Billing Details </h3>
+        <div class="form-row">
+            <div class="form-group  col-md-6">
+                <label >Name</label>
+                <input type="text" class="form-control" id="inputName1" placeholder="Name">
+				<div class="text-danger" id="no-namebilling" ></div>
+            </div>
+            <div class="form-group  col-md-6">
+                <label >Contact Phone</label>
+                <input type="number" class="form-control" id="contactPhone1" placeholder="4422764536">
+				<div class="text-danger" id="no-phonebilling" ></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Address Line 1</label>
+                <input type="text" class="form-control" id="inputAddress1" placeholder="3242 Martin St">
+				<div class="text-danger" id="no-addressbilling" ></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">Address Line 2</label>
+                <input type="text" class="form-control" id="inputAddress21" placeholder="Apartment, studio, or floor">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity1">
+				<div class="text-danger" id="no-citybilling" ></div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control" id="inputState1">
+				<div class="text-danger" id="no-statebilling" ></div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip1">
+				<div class="text-danger" id="no-zipbilling" ></div>
+            </div>
+        </div>
+    <!-- </form>  
+
+    <!--  <form class="border rounded p-3"> -->
+
+        <h3> Shipping Details </h3>
+        <div class="form-row">
+            <div class="form-group  col-md-6">
+                <label  >Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <div class="text-danger" name="noname" id="no-name"></div>
+            </div>
+            <div class="form-group  col-md-6">
+                <label >Contact Phone</label>
+                <input type="number" class="form-control" id="contactPhone" placeholder="4422764536" >
+                <div class="text-danger" id="no-phone" ></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Address Line 1</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="3242 Martin St">
+				<div class="text-danger" id="no-address" ></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">Address Line 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+				<div class="text-danger" id="no-city" ></div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control" id="inputState">		
+				<div class="text-danger" id="no-state" ></div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+		<div class="text-danger" id="no-zip" ></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Billing address same as shipping address.
+                </label>
+            </div>
+        </div>
+
+    <!-- </form>  -->
+
+
+
+    <!--   <form class="border rounded p-3">  -->
+        <h3> Credit Card Details </h3>
+        <div class="form-row">
+            <div class="form-group  col-md-6">
+                <label >Credit Card Type</label>
+                <select id="inputType" class="form-control">
+                    <option selected>Select Type</option>
+                    <option>VISA</option>
+                    <option>MASTER CARD</option>
+                    <option>DISCOVER</option>
+                    <option>AMEX</option>
+                </select>
+            </div>
+            <div class="form-group  col-md-6">
+                <label for="ccNumber">Credit Card Number</label>
+                <input type="text" class="form-control" id="card-number" placeholder="card number">
+				<div class="text-danger" id="no-cardnumbers" ></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="ccExpDate">Expiration Date</label>
+                <input type="text" class="form-control" id="expiry-card" placeholder="MON/YY">
+				<div class="text-danger" id="no-expiry" ></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="securityCode">Security Code</label>
+                <input type="number" class="form-control" id="security-code" placeholder="323" max="9999">
+				<div class="text-danger" id="no-securitycode" ></div>
+            </div>
+        </div>
+
+
+        
+<button  type="reset" class="btn btn-primary btn-lg">Clear Fields</button></br></br>
+    </form>
+</br></br>
+<button type="button" id="check-out-product" class="btn btn-secondary btn-lg">Check Out Now</button></br></br>
+
+
+
+
+
+</div>
+</body></html>

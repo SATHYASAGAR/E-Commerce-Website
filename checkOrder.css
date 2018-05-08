@@ -1,0 +1,42 @@
+ /*   
+                      Nagendra, Sathyasagar
+                      Account:  jadrn024
+                      CS645, Spring 2018
+                      Project #2
+              */
+
+#table-records{
+padding: 20px;
+}
+#cont-div{
+margin-top: 20px;
+padding: 20px;
+}
+
+.bold{
+font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+#heading-review{
+font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+#cost-details{
+margin-top: 20px;
+padding: 100px;
+}
+
+#place-order-button{
+background: #f0c14b;
+width: 100%;
+}
+
+#cancel-order-button{
+background: #f0c14b;
+width: 100%;
+}
